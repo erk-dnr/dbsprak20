@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/social_network</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">Kire1998.</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+
+        <!-- Print executed SQL to stdout -->
+        <property name="show_sql">false</property>
+        <property name="format_sql">true</property>
+
+        <!-- Update database on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Annotated entity classes -->
+        <mapping class="dbprak20.entity.City"/>
+        <mapping class="dbprak20.entity.Comment"/>
+        <mapping class="dbprak20.entity.Company"/>
+        <mapping class="dbprak20.entity.Continent"/>
+        <mapping class="dbprak20.entity.Country"/>
+        <mapping class="dbprak20.entity.Forum" />
+        <mapping class="dbprak20.entity.ForumMember"/>
+        <mapping class="dbprak20.entity.Friendship"/>
+        <mapping class="dbprak20.entity.KnowsBidirectionalView"/>
+        <mapping class="dbprak20.entity.Message"/>
+        <mapping class="dbprak20.entity.Organisation"/>
+        <mapping class="dbprak20.entity.Person" />
+        <mapping class="dbprak20.entity.PersonCompany"/>
+        <mapping class="dbprak20.entity.PersonEmail"/>
+        <mapping class="dbprak20.entity.PersonLanguage"/>
+        <mapping class="dbprak20.entity.PersonLikesComment"/>
+        <mapping class="dbprak20.entity.PersonLikesPost"/>
+        <mapping class="dbprak20.entity.PersonUniversity"/>
+        <mapping class="dbprak20.entity.Place"/>
+        <mapping class="dbprak20.entity.Post"/>
+        <mapping class="dbprak20.entity.Tag" />
+        <mapping class="dbprak20.entity.TagClass" />
+        <mapping class="dbprak20.entity.University"/>
+
+        <mapping class="dbprak20.key.ForumMemberID"/>
+        <mapping class="dbprak20.key.KnowsID"/>
+        <mapping class="dbprak20.key.PersonCompanyID"/>
+        <mapping class="dbprak20.key.PersonLikesCommentID"/>
+        <mapping class="dbprak20.key.PersonLikesPostID"/>
+        <mapping class="dbprak20.key.PersonUniversityID"/>
+
+    </session-factory>
+</hibernate-configuration>

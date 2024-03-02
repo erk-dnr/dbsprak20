@@ -1,0 +1,15 @@
+# personalized version of sql file, where local path is used
+Dokumente/data-import-custom-notebook.sql
+
+# IntelliJ
+dbprak20_application/.idea/
+# target directory
+dbprak20_application/target/
+
+# personal hibernate config file
+dbprak20_application/src/main/resources/hibernate.cfg.xml
+
+# dbprak20-application.iml
+dbprak20_application/dbprak20-application.iml
+
+Abgaben/*
